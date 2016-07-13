@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="PhotesCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="84" id="KGk-i7-Jjw" customClass="PhotosViewCell" customModule="AlomofireJsonDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p1z-kY-3if">
+                        <rect key="frame" x="9" y="11" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="N4F-tk-5SI"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saZ-D3-zaJ">
+                        <rect key="frame" x="82" y="25" width="233" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p1z-kY-3if" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2Ie-5Q-PoG"/>
+                    <constraint firstItem="p1z-kY-3if" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="1" id="8RM-YO-MyL"/>
+                    <constraint firstItem="saZ-D3-zaJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="AYk-t1-alG"/>
+                    <constraint firstItem="saZ-D3-zaJ" firstAttribute="centerY" secondItem="p1z-kY-3if" secondAttribute="centerY" id="JK4-LM-eST"/>
+                    <constraint firstItem="saZ-D3-zaJ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="3" id="N6I-rV-AcQ"/>
+                    <constraint firstItem="p1z-kY-3if" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="le3-ma-jx0"/>
+                    <constraint firstItem="saZ-D3-zaJ" firstAttribute="leading" secondItem="p1z-kY-3if" secondAttribute="trailing" constant="13" id="pxm-pE-Nvx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="thumbnailImageView" destination="p1z-kY-3if" id="NL2-oH-ENS"/>
+                <outlet property="titleLabel" destination="saZ-D3-zaJ" id="zTw-KH-KoG"/>
+            </connections>
+            <point key="canvasLocation" x="470" y="440.5"/>
+        </tableViewCell>
+    </objects>
+</document>
