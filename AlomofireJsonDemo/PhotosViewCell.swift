@@ -18,15 +18,17 @@ class PhotosViewCell: UITableViewCell {
         super.awakeFromNib()
         thumbnailImageView.layer.cornerRadius = thumbnailImageView.frame.size.width/2
         thumbnailImageView.layer.masksToBounds = true
-
-
-       
+        let tapGestureRecognizer = UITapGestureRecognizer(target:self, action:Selector("imageTapped:"))
+        thumbnailImageView.userInteractionEnabled = true
+        thumbnailImageView.addGestureRecognizer(tapGestureRecognizer)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state//
     }
     
+    func imageTapped(img: AnyObject)
+    {
+      
+    }
 }

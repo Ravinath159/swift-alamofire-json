@@ -22,6 +22,10 @@
 		D14F659F1D2B83890041C3FB /* AlomofireJsonDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F659E1D2B83890041C3FB /* AlomofireJsonDemoUITests.swift */; };
 		D14F65AF1D2B91DA0041C3FB /* RootModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F65AE1D2B91DA0041C3FB /* RootModelClass.swift */; };
 		D14F65B11D2B9BB90041C3FB /* CustemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14F65B01D2B9BB90041C3FB /* CustemCell.swift */; };
+		D165FA141D37D52B00AFE38B /* commentsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D165FA131D37D52B00AFE38B /* commentsClass.swift */; };
+		D165FA161D37D56100AFE38B /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D165FA151D37D56100AFE38B /* CommentsViewController.swift */; };
+		D165FA191D37D70900AFE38B /* commentsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D165FA171D37D70900AFE38B /* commentsViewCell.swift */; };
+		D165FA1A1D37D70900AFE38B /* commentsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D165FA181D37D70900AFE38B /* commentsViewCell.xib */; };
 		EE0A0F9DE32C7E7A8173A7B5 /* Pods_AlomofireJsonDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C498F37435D9F1D70D3CC17A /* Pods_AlomofireJsonDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,10 @@
 		D14F65A01D2B83890041C3FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D14F65AE1D2B91DA0041C3FB /* RootModelClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModelClass.swift; sourceTree = "<group>"; };
 		D14F65B01D2B9BB90041C3FB /* CustemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustemCell.swift; sourceTree = "<group>"; };
+		D165FA131D37D52B00AFE38B /* commentsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentsClass.swift; sourceTree = "<group>"; };
+		D165FA151D37D56100AFE38B /* CommentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentsViewController.swift; path = ../CommentsViewController.swift; sourceTree = "<group>"; };
+		D165FA171D37D70900AFE38B /* commentsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commentsViewCell.swift; sourceTree = "<group>"; };
+		D165FA181D37D70900AFE38B /* commentsViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = commentsViewCell.xib; sourceTree = "<group>"; };
 		DDC1D20F3FA938199E39164F /* Pods-AlomofireJsonDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlomofireJsonDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlomofireJsonDemoTests/Pods-AlomofireJsonDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC17BA92050ED42D15ABC008 /* Pods_AlomofireJsonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlomofireJsonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF9BA61300291B0D246430F /* Pods-AlomofireJsonDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlomofireJsonDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlomofireJsonDemoUITests/Pods-AlomofireJsonDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,8 +135,7 @@
 		D14F65721D2B83890041C3FB = {
 			isa = PBXGroup;
 			children = (
-				D14F65AE1D2B91DA0041C3FB /* RootModelClass.swift */,
-				D1221F5C1D361CB5007D6DAA /* PhotosClass.swift */,
+				D165FA121D37B94800AFE38B /* ModelClass */,
 				D14F657D1D2B83890041C3FB /* AlomofireJsonDemo */,
 				D14F65921D2B83890041C3FB /* AlomofireJsonDemoTests */,
 				D14F659D1D2B83890041C3FB /* AlomofireJsonDemoUITests */,
@@ -154,9 +161,12 @@
 				D14F657E1D2B83890041C3FB /* AppDelegate.swift */,
 				D14F65801D2B83890041C3FB /* ViewController.swift */,
 				D1221F5E1D3623A0007D6DAA /* PhotosViewController.swift */,
+				D165FA151D37D56100AFE38B /* CommentsViewController.swift */,
 				D14F65B01D2B9BB90041C3FB /* CustemCell.swift */,
 				D1221F601D362590007D6DAA /* PhotosViewCell.swift */,
 				D1221F611D362590007D6DAA /* PhotosViewCell.xib */,
+				D165FA171D37D70900AFE38B /* commentsViewCell.swift */,
+				D165FA181D37D70900AFE38B /* commentsViewCell.xib */,
 				D14F65821D2B83890041C3FB /* Main.storyboard */,
 				D14F65851D2B83890041C3FB /* Assets.xcassets */,
 				D14F65871D2B83890041C3FB /* LaunchScreen.storyboard */,
@@ -181,6 +191,16 @@
 				D14F65A01D2B83890041C3FB /* Info.plist */,
 			);
 			path = AlomofireJsonDemoUITests;
+			sourceTree = "<group>";
+		};
+		D165FA121D37B94800AFE38B /* ModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				D14F65AE1D2B91DA0041C3FB /* RootModelClass.swift */,
+				D1221F5C1D361CB5007D6DAA /* PhotosClass.swift */,
+				D165FA131D37D52B00AFE38B /* commentsClass.swift */,
+			);
+			name = ModelClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -297,6 +317,7 @@
 			files = (
 				D14F65891D2B83890041C3FB /* LaunchScreen.storyboard in Resources */,
 				D14F65861D2B83890041C3FB /* Assets.xcassets in Resources */,
+				D165FA1A1D37D70900AFE38B /* commentsViewCell.xib in Resources */,
 				D14F65841D2B83890041C3FB /* Main.storyboard in Resources */,
 				D1221F631D362590007D6DAA /* PhotosViewCell.xib in Resources */,
 			);
@@ -448,11 +469,14 @@
 			files = (
 				D14F65B11D2B9BB90041C3FB /* CustemCell.swift in Sources */,
 				D14F65811D2B83890041C3FB /* ViewController.swift in Sources */,
+				D165FA191D37D70900AFE38B /* commentsViewCell.swift in Sources */,
+				D165FA141D37D52B00AFE38B /* commentsClass.swift in Sources */,
 				D14F657F1D2B83890041C3FB /* AppDelegate.swift in Sources */,
 				D1221F5F1D3623A0007D6DAA /* PhotosViewController.swift in Sources */,
 				D14F65AF1D2B91DA0041C3FB /* RootModelClass.swift in Sources */,
 				D1221F5D1D361CB5007D6DAA /* PhotosClass.swift in Sources */,
 				D1221F621D362590007D6DAA /* PhotosViewCell.swift in Sources */,
+				D165FA161D37D56100AFE38B /* CommentsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

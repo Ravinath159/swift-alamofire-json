@@ -12,6 +12,7 @@ import Alamofire
 var aulbumArray = [RootClass]()
 class ViewController: UIViewController{
 
+    @IBOutlet weak var zoomImage: UIImageView!
     @IBOutlet weak var MytableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
